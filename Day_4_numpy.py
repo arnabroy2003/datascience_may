@@ -71,13 +71,13 @@ import numpy as np
 # print(a/b)
 
 # Aggregate Functions
-arr = np.array(
-    [[1,2,3], #6
-     [4,5,6]] #15
-)
+# arr = np.array(
+#     [[1,2,3], #6
+#      [4,5,6]] #15
+# )
 
-first = np.max(arr[0])
-print(first)
+# first = np.max(arr[0])
+# print(first)
 # # print(arr.sum())
 # # print(arr.mean())
 # # print(arr.max())
@@ -100,3 +100,13 @@ print(first)
 # row wise sum
 # column wise max
 # replace all element grater than 10 with 0
+
+#2. 
+matrix = np.random.randint(1, 21, size=(3,3))
+print(matrix)
+
+print(matrix.sum(axis=1))
+print(matrix.max(axis=0))
+
+matrix[matrix > 10] = 0
+print(matrix)
